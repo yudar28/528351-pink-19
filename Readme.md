@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Daria Yudina](https://up.htmlacademy.ru/adaptive/19/user/528351).
-* Наставник: `Неизвестно`.
+* Наставник: [Станислав Кузнецов](https://htmlacademy.ru/profile/id237925).
 
 ---
 
