@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo-pink--link" href="#"> <img class="page-header__logo-image logo-pink--image" src="#" alt="Мобильно приложение Пинк"> </a>
+      <a class="page-header__logo-link" href="#"> <img class="page-header__logo-image" src="#" alt="Мобильно приложение Пинк"> </a>
       <button class="page-header__button-toggle" type="button"></button>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -14,10 +14,10 @@
             <a>Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Конкурс</a>
+            <a href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a href="#">HTML Academy</a>
@@ -70,6 +70,87 @@
             </li>
           </ul>
           <img class="advantages__picture" src="#" alt="Телефон со смайликом">
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__list slider">
+          <h2 class="visually-hidden">Отзывы о приложении</h2>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__author-name">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
+
+        <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+        </p>
+
+      </section>
+
+      <section class="tariff">
+        <div class="tariff__wrapper slider">
+          <h2 class="visually-hidden">Тарифные планы</h2>
+          <table class="tariff__list">
+            <tr class="hit">
+              <td class="tariff__about">
+                <p class="tariff__name"> Стандарт </p>
+                <p class="tarrif__price">3,99 USD</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__diff">Розовый фильтр</td>
+              <td class="tariff__available">
+                <img class="tariff__picture tariff__picture--yes" src="#" alt="Доступно">
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__diff">Смайлики</td>
+              <td class="tariff__available">
+                <img class="tariff__picture tariff__picture--yes" src="#" alt="Доступно">
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__diff">Комментарии</td>
+              <td class="tariff__available">
+                <img class="tariff__picture tariff__picture--no" src="#" alt="Не доступно">
+              </td>
+            </tr>
+          </table>
+
+          <p class="tariff__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__connection">Звоните:</p>
+              <p class="contacts__value">+7 (812) 555-66-66</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__connection">Пишите:</p>
+              <p class="contacts__value">mail@htmlacademy.ru</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__connection">Приезжайте в гости:</p>
+              <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+          <map class="contacts__map">
+            <h3 class="visually-hidden">Карта</h3>
+            <iframe src="#" width="320" height="300" allowfullscreen></iframe>
+          </map>
         </div>
       </section>
 

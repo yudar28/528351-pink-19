@@ -7,7 +7,7 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo logo-pink--link" href="#"> <img class="page-header__logo-image logo-pink--image" src="#" alt="Мобильно приложение Пинк"> </a>
+      <a class="page-header__logo-link" href="#"> <img class="page-header__logo-image" src="#" alt="Мобильно приложение Пинк"> </a>
       <button class="page-header__button-toggle" type="button"></button>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -15,10 +15,10 @@
             <a>Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Конкурс</a>
+            <a href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a href="#">HTML Academy</a>
@@ -111,11 +111,34 @@
         </div>
       </section>
 
+      <section class="upload-photo">
+        <div class="upload-photo__wrapper">
+          <h2 class="visually-hidden">Загрузка картинок в приложение</h2>
+          <p class="upload-photo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <img class="upload-photo__picture" src="#" alt="Картинка пользователя">
+          <div class="upload-photo__filter-list">
+            <button class="upload-photo__filter-item" type="button">
+              <img class="upload-photo__filter-img upload-photo__filter-img--crop upload-photo__filter-img--current" src="#" alt="Обрезать фото">
+            </button>
+            <button class="upload-photo__filter-item" type="button">
+              <img class="upload-photo__filter-img upload-photo__filter-img--color" src="#" alt="Добавить цветовой фильтр">
+            </button>
+            <button class="upload-photo__filter-item" type="button">
+              <img class="upload-photo__filter-img upload-photo__filter-img--bright" src="#" alt="Изменить яркость">
+            </button>
+          </div>
+          <div class="upload-photo__scale"></div>
+          <div class="upload-photo__range-toggle"></div>
+          <button class="upload-photo__button upload-photo__button--submit" type="button">Запостить</button>
+          <button class="upload-photo__button upload-photo__button--cancel" type="button">Отмена</button>
+        </div>
+      </section>
+
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo-pink--link" href="#"> <img class="page-footer__logo-image logo-pink--image" src="#" alt="Мобильно приложение Пинк"> </a>
+        <a class="page-footer__logo-link" href="#"> <img class="page-footer__logo-image" src="#" alt="Мобильно приложение Пинк"> </a>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#">Твитер</a>
