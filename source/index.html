@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link" href="#"> <img class="page-header__logo-image" src="#" alt="Мобильно приложение Пинк"> </a>
-      <button class="page-header__button-toggle" type="button"></button>
+      <div class="page-header__top-menu page-header__top-menu--active">
+        <a class="page-header__logo-link" href="index.html">Pink</a>
+        <button class="page-header__toggle page-header__toggle--close">Меню</button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -33,7 +36,10 @@
       <section class="mobile-app">
         <div class="mobile-app__wrapper">
           <h2 class="visually-hidden">Скачай мобильное приложение Пинк</h2>
-          <img class="mobile-app__img" src="#" alt="Взгляни на жизнь иначе!">
+          <div class="mobile-app__intro">
+            <p class="mobile-app__title">Взгляни на жизнь иначе!</p>
+            <img class="mobile-app__img" src="img/iphone-hand-mobile@1x.png" alt="Взгляни на жизнь иначе!">
+          </div>
           <a class="mobile-app__button button" href="#">Скачать приложение</a>
           <ul class="mobile-app__list">
             <li class="mobile-app__item">
@@ -69,7 +75,7 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages__picture" src="#" alt="Телефон со смайликом">
+          <img class="advantages__picture" src="img/iphone-screen-mobile@1x.png" alt="Телефон со смайликом">
         </div>
       </section>
 
@@ -149,7 +155,7 @@
           </ul>
           <map class="contacts__map">
             <h3 class="visually-hidden">Карта</h3>
-            <iframe src="#" width="320" height="300" allowfullscreen></iframe>
+            <img src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта"></img>
           </map>
         </div>
       </section>

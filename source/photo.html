@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo-link" href="#"> <img class="page-header__logo-image" src="#" alt="Мобильно приложение Пинк"> </a>
-      <button class="page-header__button-toggle" type="button"></button>
+      <div class="page-header__top-menu page-header__top-menu--active">
+        <a class="page-header__logo-link" href="index.html">Pink</a>
+        <div class="page-header__toggle page-header__toggle--close">Меню</div>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -38,73 +41,66 @@
           <div class="user-photos__list">
 
             <article class="user-photos__item panorama-of-day">
-              <img class="user-photos__photo panorama" src="#" alt="Панорама от Ани">
+              <img class="user-photos__photo panorama" src="img/panorama-mobile@1x.jpg" width="100%" height="137px;" alt="Панорама от Ани">
               <blockquote class="user-photos__user">
-                <p class="user-photos__author-name">Анна</p>
-                <time class="user-photos__time" datetime="2020-03-30T15:00">(5 минут назад)</time>
+                <p class="user-photos__author-name">Анна <time class="user-photos__time" datetime="2020-03-30T15:00">(5 минут назад)</time></p>
                 <p class="user-photos__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">215</span></button>
               </blockquote>
-              <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">215</span></button>
             </article>
 
             <article class="user-photos__item panorama-of-day">
-              <img class="user-photos__photo panorama" src="#" alt="Панорама от Левона">
+              <img class="user-photos__photo" src="img/photo-car-mobile@1x.jpg" width="280px" height="180px" alt="Панорама от Левона">
               <blockquote class="user-photos__user">
-                <p class="user-photos__author-name">Левон</p>
-                <time class="user-photos__time" datetime="2020-03-30T15:00">(5 часов назад)</time>
+                <p class="user-photos__author-name">Левон <time class="user-photos__time" datetime="2020-03-30T15:00">(5 часов назад)</time></p>
                 <p class="user-photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">356</span></button>
               </blockquote>
-              <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">356</span></button>
             </article>
 
             <article class="user-photos__item">
-              <img class="user-photos__photo panorama" src="#" alt="Фото от Антона">
+              <img class="user-photos__photo" src="img/photo-drumset-mobile@1x.jpg" width="280px" height="180px" alt="Фото от Антона">
               <blockquote class="user-photos__user">
-                <p class="user-photos__author-name">Антон </p>
-                <time class="user-photos__time" datetime="2020-03-30T15:00">(12 часов назад)</time>
+                <p class="user-photos__author-name">Антон <time class="user-photos__time" datetime="2020-03-30T15:00">(12 часов назад)</time></p>
                 <p class="user-photos__comment">Соседи будут рады!</p>
+                <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">666</span></button>
               </blockquote>
-              <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">666</span></button>
             </article>
 
             <article class="user-photos__item">
-              <img class="user-photos__photo panorama" src="#" alt="Фото от Бориса">
+              <img class="user-photos__photo" src="img/photo-window-mobile@1x.jpg" width="280px" height="180px" alt="Фото от Бориса">
               <blockquote class="user-photos__user">
-                <p class="user-photos__author-name">Борис</p>
-                <time class="user-photos__time" datetime="2020-03-30T15:00">(20 часов назад)</time>
+                <p class="user-photos__author-name">Борис<time class="user-photos__time" datetime="2020-03-30T15:00">(20 часов назад)</time> </p>
                 <p class="user-photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">215</span></button>
               </blockquote>
-              <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">215</span></button>
             </article>
 
             <article class="user-photos__item">
-              <img class="user-photos__photo panorama" src="#" alt="Фото от Сергея">
+              <img class="user-photos__photo" src="img/photo-fair-mobile@1x.jpg" width="280px" height="180px" alt="Фото от Сергея">
               <blockquote class="user-photos__user">
-                <p class="user-photos__author-name">Сергей</p>
-                <time class="user-photos__time" datetime="2020-03-30T15:00">(25 часов назад)</time>
+                <p class="user-photos__author-name">Сергей<time class="user-photos__time" datetime="2020-03-30T15:00">(25 часов назад)</time></p>
                 <p class="user-photos__comment">Самая кубанская в мире!</p>
+                <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">4</span></button>
               </blockquote>
-              <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">4</span></button>
             </article>
 
             <article class="user-photos__item">
-              <img class="user-photos__photo panorama" src="#" alt="Фото от Максима">
+              <img class="user-photos__photo" src="img/photo-pov-mobile@1x.jpg" width="280px" height="180px" alt="Фото от Максима">
               <blockquote class="user-photos__user">
-                <p class="user-photos__author-name">Максим</p>
-                <time class="user-photos__time" datetime="2020-03-30T15:00">(40 часов назад)</time>
+                <p class="user-photos__author-name">Максим<time class="user-photos__time" datetime="2020-03-30T15:00">(40 часов назад)</time></p>
                 <p class="user-photos__comment">Где снег-то?</p>
+                <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">150</span></button>
               </blockquote>
-              <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">150</span></button>
             </article>
 
             <article class="user-photos__item">
-              <img class="user-photos__photo panorama" src="#" alt="Фото от Надежды">
+              <img class="user-photos__photo" src="img/photo-wing-mobile@1x.jpg" width="280px" height="180px" alt="Фото от Надежды">
               <blockquote class="user-photos__user">
-                <p class="user-photos__author-name">Надежда</p>
-                <time class="user-photos__time" datetime="2020-03-30T15:00">(45 часов назад)</time>
+                <p class="user-photos__author-name">Надежда<time class="user-photos__time" datetime="2020-03-30T15:00">(45 часов назад)</time></p>
                 <p class="user-photos__comment">Всем GM и взаимные лайки!</p>
+                <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">2560</span></button>
               </blockquote>
-              <button class="user-photos__heart heart">Нравится: <span class="user-photos__likes-number">2560</span></button>
             </article>
 
           </div>
@@ -138,24 +134,34 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo-link" href="#"> <img class="page-footer__logo-image" src="#" alt="Мобильно приложение Пинк"> </a>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Твитер</a>
+        <a class="page-footer__logo-link" href="#">Мобильное приложение Пинк </a>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
+              twitter
+              <!-- <span class="visually-hidden">Твитер</span>
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="18px" height="14px"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z"/></svg> -->
+              </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
+              facebook
+              <!-- <span class="visually-hidden">Фейсбук</span>
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="9px" height="18px"><path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"/></svg> -->
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Ютуб</a>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
+              youtube
+              <!--  <span class="visually-hidden">Ютуб</span>
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="13px"><path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/></svg> -->
+            </a>
           </li>
         </ul>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+        <div class="page-footer__copyright">
+          <p class="page-footer__copyright-text">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
         </div>
-
-
       </div>
     </footer>
 
