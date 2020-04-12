@@ -15,7 +15,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="photo.html">Фотографии</a>
@@ -36,15 +36,15 @@
 
       <section class="competition">
         <h2 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-        <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <form class="competition__form form" method="post" action="https://echo.htmlacademy.ru/">
-          <fieldset class="form__full-name">
+          <fieldset class="form__full-name form-text">
             <label for="surname">Фамилия:</label>
-            <input class="form-input__full-name" type="text" name="surname" id="surname" value="" placeholder="Укажите фамилию *" required>
+            <input class="form-input__full-name form-input" type="text" name="surname" id="surname" value="" placeholder="Укажите фамилию *" required>
             <label for="name">Имя:</label>
-            <input class="form-input__full-name" type="text" name="name" id="name" value="" placeholder="Введите ваше имя *" required>
+            <input class="form-input__full-name form-input" type="text" name="name" id="name" value="" placeholder="Введите ваше имя *" required>
             <label for="patronymic">Отчество:</label>
-            <input class="form-input__full-name" type="text" name="patronymic" id="patronymic" value="" placeholder="Ну и отчество тоже">
+            <input class="form-input__full-name form-input" type="text" name="patronymic" id="patronymic" value="" placeholder="Ну и отчество тоже">
           </fieldset>
           <fieldset class="form__achievements">
             <legend class="form__achievement-text"> Ваши безбашенные достижения в путешествии </legend>
@@ -75,13 +75,13 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__contacts">
+          <fieldset class="form__contacts form-text">
             <label for="phone-number">Номер телефона </label>
-            <input class="form-input__contacts" type="number" name="phone-number" id="phone-number" value="" placeholder="Номер, пожалуйста">
+            <input class="form-input__contacts form-input" type="number" name="phone-number" id="phone-number" value="" placeholder="Номер, пожалуйста">
             <label for="email">Адрес почты</label>
-            <input class="form-input__contacts" type="email" name="email" id="email" value="" placeholder="Введите почту *" required>
+            <input class="form-input__contacts form-input" type="email" name="email" id="email" value="" placeholder="Введите почту *" required>
           </fieldset>
-          <fieldset lass="form__type-phone">
+          <fieldset class="form__type-phone">
             <legend class="form__type-phone-text">С каким приложением путешествовали?</legend>
             <ul class="form__type-phone__list">
               <li class="form__type-phone__item">
@@ -100,10 +100,10 @@
           </fieldset>
           <fieldset class="form__emotions">
             <legend class="form__emotions-text">Опишите свои эмоции</legend>
-            <textarea class="form__emotions-comment" name="emotions" cols="30" rows="20" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="form__emotions-comment" name="emotions" cols="42" rows="17" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <input class="form__emotions__input" type="submit" name="button-submit-form" value="Отправить форму">
-          <small class="form__emotions__small"><sup>*</sup> — обязательные поля</small>
+          <input class="form__submit" type="submit" name="button-submit-form" value="Отправить форму">
+          <small class="form__small"><sup>*</sup> — обязательные поля</small>
         </form>
       </section>
 

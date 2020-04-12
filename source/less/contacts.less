@@ -1,0 +1,75 @@
+.contacts {
+  background-color: white;
+  text-align: center;
+
+  position: relative;
+}
+
+.contacts__text {
+  margin-bottom: 44px;
+  padding-top: 50px;
+
+  font-size: 24px;
+  font-weight: 300;
+  color: #283645;
+}
+
+.contacts__item {
+  margin-bottom: 28px;
+  padding-right: 39px;
+  padding-left: 44px;
+}
+
+.contacts__connection {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts__value {
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856;
+}
+
+.contacts__mail-active {
+  &:hover,
+  &:focus {
+    color: #283645;
+    border-bottom: 1px solid #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: none;
+  }
+}
+
+// .contacts__map {
+
+// }
+
+.contacts__map {
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 887px;
+    left: 0;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 984px;
+    left: 145px;
+    background-image: url("../img/icon-map-marker.svg");
+    z-index: 3;
+    width: 36px;
+    height: 35px;
+  }
+}
