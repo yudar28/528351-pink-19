@@ -34,16 +34,16 @@
 
       <h1 class="visually-hidden"> Пинк - Сайт фотоприложения для раскрашивания серых будней </h1>
 
-      <section class="competition">
-        <h2 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-        <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <form class="competition__form form" method="post" action="https://echo.htmlacademy.ru/">
+      <section class="form-competition">
+        <h2 class="form-competition__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <p class="form-competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="form" method="post" action="https://echo.htmlacademy.ru/">
           <fieldset class="form__full-name form-text">
-            <label for="surname">Фамилия:</label>
+            <label class="form-text__label" for="surname">Фамилия:</label>
             <input class="form-input__full-name form-input" type="text" name="surname" id="surname" value="" placeholder="Укажите фамилию *" required>
-            <label for="name">Имя:</label>
+            <label class="form-text__label" for="name">Имя:</label>
             <input class="form-input__full-name form-input" type="text" name="name" id="name" value="" placeholder="Введите ваше имя *" required>
-            <label for="patronymic">Отчество:</label>
+            <label class="form-text__label" for="patronymic">Отчество:</label>
             <input class="form-input__full-name form-input" type="text" name="patronymic" id="patronymic" value="" placeholder="Ну и отчество тоже">
           </fieldset>
           <fieldset class="form__achievements">
@@ -51,34 +51,34 @@
             <ul class="form__checkbox-list">
               <li class="form__checkbox-item">
                 <input class="form__checkbox" type="checkbox" name="selfi-with-shark" id="selfi-with-shark" checked>
-                <label for="selfi-with-shark">Сделал селфи с акулой</label>
+                <label class="form__checkbox__label" for="selfi-with-shark">Сделал селфи с акулой</label>
               </li>
               <li class="form__checkbox-item">
                 <input class="form__checkbox" type="checkbox" name="burned" id="burned" checked>
-                <label for="burned">Обгорел на пляже</label>
+                <label class="form__checkbox__label" for="burned">Обгорел на пляже</label>
               </li>
               <li class="form__checkbox-item">
                 <input class="form__checkbox" type="checkbox" name="Chak-Norris" id="Chak-Norris">
-                <label for="Chak-Norris">Видел Чака Норриса</label>
+                <label class="form__checkbox__label" for="Chak-Norris">Видел Чака Норриса</label>
               </li>
               <li class="form__checkbox-item">
                 <input class="form__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-                <label for="souvenirs">Накупил сувениров</label>
+                <label class="form__checkbox__label" for="souvenirs">Накупил сувениров</label>
               </li>
               <li class="form__checkbox-item">
                 <input class="form__checkbox" type="checkbox" name="tower" id="tower" checked>
-                <label for="tower">Удержал башню</label>
+                <label class="form__checkbox__label" for="tower">Удержал башню</label>
               </li>
               <li class="form__checkbox-item">
                 <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
-                <label for="hotel">Разгромил отель</label>
+                <label class="form__checkbox__label" for="hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__contacts form-text">
-            <label for="phone-number">Номер телефона </label>
+            <label class="form-text__label" for="phone-number">Номер телефона </label>
             <input class="form-input__contacts form-input" type="number" name="phone-number" id="phone-number" value="" placeholder="Номер, пожалуйста">
-            <label for="email">Адрес почты</label>
+            <label class="form-text__label" for="email">Адрес почты</label>
             <input class="form-input__contacts form-input" type="email" name="email" id="email" value="" placeholder="Введите почту *" required>
           </fieldset>
           <fieldset class="form__type-phone">
@@ -86,15 +86,15 @@
             <ul class="form__type-phone__list">
               <li class="form__type-phone__item">
                 <input class="form__type-phone__input" type="radio" name="answer" value="iOS" id="iOS" checked>
-                <label for="iOS">Pink для iOS</label>
+                <label class="form__type-phone__label" for="iOS">Pink для iOS</label>
               </li>
               <li class="form__type-phone__item">
                 <input class="form__type-phone__input" type="radio" name="answer" value="Android" id="Android">
-                <label for="Android">Pink на Android</label>
+                <label class="form__type-phone__label" for="Android">Pink на Android</label>
               </li>
               <li class="form__type-phone__item">
                 <input class="form__type-phone__input" type="radio" name="answer" value="Windows" id="Windows">
-                <label for="Windows">Windows Phone</label>
+                <label class="form__type-phone__label" for="Windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
