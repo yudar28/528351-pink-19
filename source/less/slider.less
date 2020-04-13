@@ -1,0 +1,36 @@
+// .slider {
+
+// }
+
+.slider__toggle {
+  outline: none;
+  border: none;
+}
+
+.slider__toggle-btn {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-color: #283645;
+
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.slider__toggle-btn--current {
+  background-color: white;
+  border: 3px solid #283645;
+  opacity: 1;
+}
