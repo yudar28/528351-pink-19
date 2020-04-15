@@ -1,4 +1,6 @@
 .page-header {
+  margin: 0 auto;
+
   background-color: @header-bg-color;
 
   width: @mobile-width;
@@ -8,21 +10,67 @@
   font-weight: 700;
   text-transform: uppercase;
   color: white;
+
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .page-header__top-menu {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(40, 54, 69, 0.3);
+
+  min-height: 69px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__top-menu {
+    min-height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__top-menu {
+    min-height: 110px;
+
+    flex-grow: 2;
+    align-items: center;
+  }
+}
+
+.page-header__top-menu--active {
+  background-color: @header-bg-color;
 
   box-shadow: 0 1px 0 0 black,
     0 2px 0 0 rgba(255, 255, 255, 0.15);
 }
 
-// .page-header__top-menu--active {
-
-// }
+@media (min-width: @desktop-width) {
+  .page-header__top-menu--active {
+    background-color: rgba(40, 54, 69, 0.3);
+    box-shadow: none;
+  }
+}
 
 .page-header__logo-link {
-  margin: 22px 155px 22px 20px;
+  margin-left: 20px;
 
   background: url("../img/logo-pink-white-mobile.svg") no-repeat center center;
 
@@ -44,10 +92,28 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .page-header__logo-link {
+    background-image: url("../img/logo-pink-white-tablet.svg");
+
+    width: 147px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-link {
+    margin: 0 auto;
+
+    background-image: url("../img/logo-pink-white-desktop.svg");
+
+    width: 147px;
+    height: 40px;
+  }
+}
+
 .page-header__toggle {
-  margin-top: 21px;
   margin-right: 19px;
-  margin-bottom: 25px;
   padding: 0;
 
   background: url("../img/icon-menu-burger.svg") no-repeat center center;
@@ -73,8 +139,17 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-header__toggle {
+    display: none;
+  }
+}
+
 .page-header__toggle--close {
-  background: url("../img/icon-menu-cross.svg") no-repeat center center;
+  background-image: url("../img/icon-menu-cross.svg");
+
+  width: 24px;
+  height: 23px;
 
   &:hover,
   &:focus {
