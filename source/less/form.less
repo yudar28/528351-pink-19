@@ -16,8 +16,29 @@
   text-align: center;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: -5px -55px;
-  background-size: 320px 462px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-competition__title {
+    min-height: 330px;
+    box-sizing: border-box;
+
+    padding: 83px 46px 79px 46px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    font-size: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-competition__title {
+    min-height: 284px;
+
+    padding: 73px 220px 100px 220px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg") no-repeat center center;
+  }
 }
 
 .form-competition__text {
