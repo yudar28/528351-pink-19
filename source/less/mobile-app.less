@@ -5,15 +5,65 @@
   background-color: #1d2631;
 }
 
-// .mobile-app__wrapper {
+@media (min-width: @tablet-width) {
+  .mobile-app {
+    margin: 0;
+    padding: 0;
+    min-height: 619px;
 
-// }
+    background:
+      url("../img/iphone-hand-tablet@1x.png") no-repeat -15px bottom,
+      url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
 
-.mobile-app__intro {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
+    // background-size:
+    //   660px 545px,
+    //   660px 729px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mobile-app {
+    min-height: 743px;
+
+    background:
+      url("../img/iphone-hand-desktop@1x.png") no-repeat right bottom,
+      url("../img/bg-back-desktop@1x.jpg") no-repeat center center;
+
+    // background-size:
+    //   1050px 645px,
+    //   @desktop-width 743px;
+  }
+}
+
+.mobile-app__wrapper {
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .mobile-app__wrapper {
+    margin-left: 20px;
+    min-height: 619px;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mobile-app__wrapper {
+    margin-left: 130px;
+  }
 }
 
 .mobile-app__title {
+  min-height: 400px;
+
+  background:
+    url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
+    url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
+
+  background-size:
+    320px 314px,
+    320px 462px;
+
   margin: 0;
   margin-top: 1px;
   padding: 28px 49px 33px 50px;
@@ -25,8 +75,32 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .mobile-app__title {
+    min-height: auto;
+    margin: 0;
+    padding-top: 103px;
+    padding-bottom: 39px;
+
+    background: none;
+
+    font-size: 40px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mobile-app__title {
+    padding: 121px 0 61px;
+
+    background: none;
+
+    font-size: 50px;
+  }
+}
+
 .mobile-app__button {
-  margin: 20px 12px 25px;
+  margin: 20px auto 25px;
   padding: 17px 39px 20px 40px;
 
   display: inline-block;
@@ -46,6 +120,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mobile-app__button {
+    margin-bottom: 75px;
+    padding: 19px 29px 16px 28px;
+
+    font-size: 21px;
   }
 }
 
@@ -93,4 +176,11 @@
   font-size: 14px;
   font-weight: 300;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .mobile-app__available {
+    margin: 0;
+    font-size: 18px;
+  }
 }
