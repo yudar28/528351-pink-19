@@ -5,7 +5,28 @@
   position: relative;
 }
 
+.contacts__list {
+  .indent-reset ();
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__item {
+    &:nth-child(2) {
+      order: 2;
+    }
+  }
+}
+
 .contacts__text {
+  .indent-reset ();
   margin-bottom: 44px;
   padding-top: 50px;
 
