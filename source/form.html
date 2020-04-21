@@ -39,7 +39,7 @@
         <p class="form-competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <form class="form" method="post" action="https://echo.htmlacademy.ru/">
 
-          <fieldset class="form__full-name">
+          <fieldset class="form__fieldset form__full-name">
             <label class="form__full-name-label" for="surname">Фамилия:</label>
             <input class="form__full-name-input" type="text" name="surname" id="surname" value="" placeholder="Укажите фамилию *" required>
             <label class="form__full-name-label" for="name">Имя:</label>
@@ -48,8 +48,8 @@
             <input class="form__full-name-input" type="text" name="patronymic" id="patronymic" value="" placeholder="Ну и отчество тоже">
           </fieldset>
 
-          <fieldset class="form__achievements">
-            <legend class="form__achievement-legend"> Ваши безбашенные <br> достижения в путешествии </legend>
+          <fieldset class="form__fieldset form__achievements">
+            <legend class="form__legend"> Ваши безбашенные <br> достижения в путешествии </legend>
             <ul class="form__checkbox-list">
               <li class="form__checkbox-item">
                 <input class="form__checkbox" type="checkbox" name="selfi-with-shark" id="selfi-with-shark" checked>
@@ -78,16 +78,16 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__contacts">
-            <legend class="form__contacts-legend">Контактная информация</legend>
+          <fieldset class="form__fieldset form__contacts">
+            <legend class="form__legend form__legend--contacts">Контактная информация</legend>
             <label class="form__contacts-label" for="phone-number">Номер телефона </label>
             <input class="form__contacts-input" type="number" name="phone-number" id="phone-number" value="" placeholder="Номер, пожалуйста">
             <label class="form__contacts-label" for="email">Адрес почты</label>
             <input class="form__contacts-input" type="email" name="email" id="email" value="" placeholder="Введите почту *" required>
           </fieldset>
 
-          <fieldset class="form__type-phone">
-            <legend class="form__type-phone-legend">С каким приложением путешествовали?</legend>
+          <fieldset class="form__fieldset form__type-phone">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
             <ul class="form__type-phone__list">
               <li class="form__type-phone__item">
                 <input class="form__type-phone__input" type="radio" name="answer" value="iOS" id="iOS" checked>
@@ -104,8 +104,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__emotions">
-            <legend class="form__emotions-legend">Опишите свои эмоции</legend>
+          <fieldset class="form__fieldset form__emotions">
+            <legend class="form__legend form__emotions-legend">Опишите свои эмоции</legend>
             <textarea class="form__emotions-comment" name="emotions" cols="42" rows="17" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
 
