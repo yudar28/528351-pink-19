@@ -1,9 +1,7 @@
 .statistics {
   display: none;
-}
 
-@media (min-width: @tablet-width) {
-  .statistics {
+  @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
 
@@ -11,18 +9,17 @@
 
     text-align: left;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .statistics {
+  @media (min-width: @desktop-width) {
     min-height: 429px;
 
     background-color: #f2f2f2;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .statistics__picture {
+.statistics__picture {
+
+  @media (min-width: @tablet-width) {
     flex-grow: 1;
 
     font-size: 96px;
@@ -34,30 +31,29 @@
     width: 202px;
     height: 202px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .statistics__picture {
+  @media (min-width: @desktop-width) {
     font-size: 120px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .statistics__description {
+
+.statistics__description {
+
+  @media (min-width: @tablet-width) {
     flex-grow: 1;
 
     width: 330px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .statistics__description {
+  @media (min-width: @desktop-width) {
     width: 525px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .statistics__title {
+.statistics__title {
+
+  @media (min-width: @tablet-width) {
     .indent-reset ();
 
     font-size: 30px;
@@ -67,8 +63,9 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .statistics__text {
+.statistics__text {
+
+  @media (min-width: @tablet-width) {
     .indent-reset ();
 
     font-size: 14px;
@@ -76,27 +73,24 @@
     line-height: 24px;
     color: #283645;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .statistics__text {
+  @media (min-width: @desktop-width) {
     font-size: 18px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .statistics__info {
+.statistics__info {
+
+  @media (min-width: @tablet-width) {
+    .indent-reset ();
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: #d22856;
     text-decoration-line: underline;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .statistics__info {
-    .indent-reset ();
+  @media (min-width: @desktop-width) {
     font-size: 18px;
   }
 }
