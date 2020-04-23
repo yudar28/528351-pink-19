@@ -1,10 +1,5 @@
 .user-photos {
-  margin-top: 1px;
   background-color: white;
-
-  @media (min-width: @desktop-width) {
-    margin-top: 0;
-  }
 }
 
 // .user-photos__wrapper {
@@ -13,10 +8,10 @@
 
 .user-photos__title {
   .indent-reset ();
-  padding: 35px 76px 70px;
+  padding: 101px 76px 70px;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
+  background-color: #1d2631;
 
   font-size: 24px;
   font-weight: 300;
@@ -25,6 +20,8 @@
 
   @media (min-width: @tablet-width) {
     min-height: 180px;
+
+    padding-top: 191px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center center;
@@ -36,6 +33,16 @@
     min-height: 280px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+}
+
+.user-photos__title--notop {
+  @media (max-width: @tablet-width-only) {
+    padding-top: 81px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 35px;
   }
 }
 
@@ -94,6 +101,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-bottom: 20px;
 
     width: 300px;
     min-height: 455px;

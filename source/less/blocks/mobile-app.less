@@ -10,7 +10,7 @@
     min-height: 619px;
 
     background:
-      url("../img/iphone-hand-tablet@1x.png") no-repeat -15px bottom,
+      url("../img/iphone-hand-tablet@1x.png") no-repeat 80% bottom,
       url("../img/bg-back-tablet@1x.jpg") no-repeat center center;
 
     // background-size:
@@ -19,7 +19,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 743px;
+    min-height: 853px;
 
     background:
       url("../img/iphone-hand-desktop@1x.png") no-repeat right bottom,
@@ -35,18 +35,20 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-left: 20px;
+    margin-left: 6.67%;
     min-height: 619px;
-    width: 300px;
+    width: 45%;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 130px;
+    width: 25%;
+    margin-left: 10.8%;
   }
 }
 
 .mobile-app__title {
   min-height: 400px;
+  width: 222px;
 
   background:
     url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
@@ -54,14 +56,12 @@
 
   background-size:
     320px 314px,
-    320px 462px;
+    auto auto;
 
   .indent-reset ();
-  margin: 0;
-  margin-top: 1px;
-  padding: 28px 49px 33px 50px;
+  margin: 0 auto;
+  padding: 95px 49px 33px 50px;
 
-  font-family: @font-family-base;
   font-size: 24px;
   font-weight: 300;
   color: white;
@@ -69,22 +69,29 @@
 
   @media (min-width: @tablet-width) {
     min-height: auto;
-    margin: 0;
-    padding-top: 103px;
+    padding: 0;
+    padding-top: 213px;
     padding-bottom: 39px;
 
     background: none;
 
     font-size: 40px;
-    font-weight: 300;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 121px 0 61px;
+    padding: 231px 0 61px;
 
     background: none;
 
     font-size: 50px;
+  }
+}
+
+.mobile-app__title--notop {
+  padding-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 103px;
   }
 }
 

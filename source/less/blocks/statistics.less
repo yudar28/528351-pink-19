@@ -19,16 +19,23 @@
 
 .statistics__picture {
   @media (min-width: @tablet-width) {
-    flex-grow: 1;
-
+    // flex-grow: 1;
+    margin-left: 21px;
+    margin-right: 70px;
     font-size: 96px;
     font-weight: 700;
     color: #d22856;
     text-align: center;
     vertical-align: middle;
 
+    background: url("../img/icon-timer.svg") no-repeat center center;
+    background-size: 238px 276px;
+
     width: 202px;
     height: 202px;
+
+    border: 10px solid #d22856;
+    border-radius: 50%;
   }
 
   @media (min-width: @desktop-width) {

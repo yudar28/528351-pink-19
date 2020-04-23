@@ -1,20 +1,18 @@
 .advantages {
-  min-height: 1051px;
-
   background-color: #f2f2f2;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center 768px;
+  // background-image: url("../img/iphone-screen-mobile@1x.png");
+  // background-repeat: no-repeat;
+  // background-position: center 768px;
 
   text-align: center;
 
   @media (min-width: @tablet-width) {
     min-height: 725px;
 
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: 20px 272px;
-    background-size: 268px 481px;
+    // background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    // background-repeat: no-repeat;
+    // background-position: 20px 272px;
+    // background-size: 268px 481px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,13 +20,6 @@
 
     background-image: none;
   }
-}
-
-.advantages__wrapper {
-  // background-image: url("../img/bg-triangle-white.svg");
-  // background-repeat: no-repeat;
-  // background-position: 0 0;
-  // background-size: 100% auto;
 }
 
 .advantages__text {
@@ -53,6 +44,10 @@
 
     &:first-of-type {
       padding-top: 59px;
+
+      & br {
+        display: none;
+      }
     }
 
     &:last-of-type {
@@ -83,10 +78,22 @@
 
   text-align: center;
 
+  background-image: url("../img/iphone-screen-mobile@1x.png"),
+    url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 585px, 0 0;
+  background-size: 157px 320px, 100% auto;
+
   @media (min-width: @tablet-width) {
     padding-top: 70px;
 
     text-align: left;
+
+    background-image: url("../img/iphone-screen-3-tablet@1x.png"),
+      url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 6.67% 28px, 0 0;
+    background-size: 268px 547px, 100% auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -107,8 +114,14 @@
 
   width: 259px;
 
+  @media (max-width: @mobile-width-only) {
+    &:last-of-type {
+      padding-bottom: 300px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
-    margin-left: 329px;
+    margin-left: 50%;
   }
 
   @media (min-width: @desktop-width) {

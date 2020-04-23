@@ -1,9 +1,9 @@
 .page-header {
+  position: relative;
+
   margin: 0 auto;
 
-  background-color: @header-bg-color;
-
-  width: @mobile-width;
+  width: 100%;
 
   font-family: @font-family-base;
   font-size: @font-size-base;
@@ -13,16 +13,20 @@
 
   text-align: center;
 
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
-  }
-
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+  }
+}
+
+.page-header--nojs .page-header__toggle {
+  @media (max-width: @tablet-width-only) {
+    display: none;
   }
 }
 
@@ -31,9 +35,16 @@
   justify-content: space-between;
   align-items: center;
 
-  background-color: rgba(40, 54, 69, 0.3);
+  width: 100%;
+
+  box-sizing: border-box;
 
   min-height: 69px;
+
+  @media (max-width: @tablet-width-only) {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 110px;
@@ -41,6 +52,7 @@
 
   @media (min-width: @desktop-width) {
     min-height: 110px;
+    width: 35%;
 
     flex-grow: 2;
     align-items: center;
@@ -48,6 +60,8 @@
 }
 
 .page-header__top-menu--active {
+  position: relative;
+
   background-color: @header-bg-color;
 
   box-shadow: 0 1px 0 0 black,
@@ -62,27 +76,28 @@
 .page-header__logo-link {
   margin-left: 20px;
 
-  background: url("../img/logo-pink-white-mobile.svg") no-repeat center center;
-
   width: 75px;
   height: 22px;
 
-  display: block;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  & path {
+    fill: #ffffff;
+  }
 
   &:hover,
   &:focus {
-    background: url("../img/logo-pink-pink-mobile.svg") no-repeat center center;
+    & path {
+      fill: #d22856;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    & path {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/logo-pink-white-tablet.svg");
+    // background-image: url("../img/logo-pink-white-tablet.svg");
 
     width: 147px;
     height: 40px;
@@ -91,7 +106,7 @@
   @media (min-width: @desktop-width) {
     margin: 0 auto;
 
-    background-image: url("../img/logo-pink-white-desktop.svg");
+    // background-image: url("../img/logo-pink-white-desktop.svg");
 
     width: 147px;
     height: 40px;
@@ -99,7 +114,7 @@
 }
 
 .page-header__toggle {
-  margin-right: 19px;
+  margin-right: 20px;
   padding: 0;
 
   background: url("../img/icon-menu-burger.svg") no-repeat center center;
