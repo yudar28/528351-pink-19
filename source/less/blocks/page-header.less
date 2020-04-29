@@ -114,7 +114,7 @@
 }
 
 .page-header__toggle {
-  margin-right: 20px;
+  margin-right: 19px;
   padding: 0;
 
   background: url("../img/icon-menu-burger.svg") no-repeat center center;
@@ -138,8 +138,10 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .page-header__toggle {
     display: none;
   }
 }

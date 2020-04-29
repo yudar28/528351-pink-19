@@ -141,21 +141,23 @@
   font-size: 14px;
   font-weight: 400;
   color: #283645;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .page-footer__copyright-link {
-  background: url("../img/logo-htmlacademy.svg") no-repeat center center;
-
   width: 27px;
   height: 34px;
 
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  & path {
+    fill: #d22856;
+  }
 
-  &:hover,
-  &:focus {
-    background-image: url("../img/logo-htmlacademy-dark.svg");
+  &:hover path,
+  &:focus path {
+    fill: #283645;
   }
 
   &:active {
