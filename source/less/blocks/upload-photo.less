@@ -3,38 +3,53 @@
   background-color: #f2f2f2;
 }
 
-@media (min-width: @tablet-width) {
-  .upload-photo__wrapper {
+.upload-photo__wrapper {
+  @media (min-width: @tablet-width) {
     display: flex;
     width: @tablet-width;
     min-height: 511px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .upload-photo__wrapper {
+  @media (min-width: @desktop-width) {
     width: @desktop-width;
   }
 }
 
 .upload-photo__text {
   .indent-reset ();
-  padding: 49px 35px 48px 32px;
+  padding: 23px 34px 0 32px;
 
   background-color: white;
 
-  font-size: 14px;
-  font-weight: 400;
+  .font(14px, 400, 2.14);
   color: #283645;
+
+  &:last-of-type {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @tablet-width) {
+    .font(18px, 400, 1.67);
+    padding-top: 45px;
+
+    &:last-of-type {
+      padding-bottom: 69px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:first-of-type {
+      margin-top: -40px;
+    }
+  }
 }
 
 .upload-photo__picture {
   padding-top: 20px;
   padding-bottom: 20px;
-}
 
-@media (min-width: @tablet-width) {
-  .upload-photo__picture {
+  @media (min-width: @tablet-width) {
     width: 50%;
   }
 }
@@ -44,10 +59,8 @@
   width: 280px;
   display: flex;
   justify-content: space-around;
-}
 
-@media (min-width: @tablet-width) {
-  .upload-photo__filter-list {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -55,10 +68,8 @@
     width: 50%;
     min-height: 300px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .upload-photo__filter-list {
+  @media (min-width: @desktop-width) {
     min-height: 400px;
   }
 }
@@ -67,10 +78,8 @@
   border: none;
   outline: none;
   background-color: #f2f2f2;
-}
 
-@media (min-width: @tablet-width) {
-  .upload-photo__filter-item {
+  @media (min-width: @tablet-width) {
     min-height: 72px;
   }
 }
@@ -79,8 +88,8 @@
   fill: #d22856;
 }
 
-@media (min-width: @desktop-width) {
-  .upload-photo__button-list {
+.upload-photo__button-list {
+  @media (min-width: @desktop-width) {
     align-self: center;
     display: flex;
   }
@@ -114,17 +123,13 @@
   &:last-child {
     margin-bottom: 41px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .upload-photo__button {
+  @media (min-width: @tablet-width) {
     padding: 20px 0 21px;
     width: 260px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .upload-photo__button {
+  @media (min-width: @desktop-width) {
     width: 183px;
   }
 }
