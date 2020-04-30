@@ -17,13 +17,32 @@
 
 .upload-photo__text {
   .indent-reset ();
-  padding: 49px 35px 48px 32px;
+  padding: 23px 34px 0 32px;
 
   background-color: white;
 
-  font-size: 14px;
-  font-weight: 400;
+  .font(14px, 400, 2.14);
   color: #283645;
+
+  &:last-of-type {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @tablet-width) {
+    .font(18px, 400, 1.67);
+    padding-top: 45px;
+
+    &:last-of-type {
+      padding-bottom: 69px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:first-of-type {
+      margin-top: -40px;
+    }
+  }
 }
 
 .upload-photo__picture {
