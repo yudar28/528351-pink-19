@@ -1,17 +1,24 @@
 .upload-photo {
   text-align: center;
   background-color: #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    background-color: white;
+  }
 }
 
 .upload-photo__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
     width: @tablet-width;
+    margin: 0 auto;
     min-height: 511px;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    width: 940px;
+    background-color: #f2f2f2;
+    margin-bottom: 22px;
   }
 }
 
@@ -42,82 +49,303 @@
     &:first-of-type {
       margin-top: -40px;
     }
+
+    &:last-of-type {
+      padding-bottom: 66px;
+    }
   }
 }
 
 .upload-photo__picture {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  display: block;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+    width: 300px;
+    height: 400px;
+    padding: 57px 34px 40px 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 57px 89px 40px 80px;
+  }
+}
+
+.upload-photo__filter {
+  position: relative;
 }
 
 .upload-photo__filter-list {
   margin: 0 auto;
-  width: 280px;
+  width: 75%;
   display: flex;
   justify-content: space-around;
 
+  position: relative;
+
   @media (min-width: @tablet-width) {
+    margin-top: 65px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    width: 50%;
-    min-height: 300px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-height: 400px;
+    width: 100%;
   }
 }
 
 .upload-photo__filter-item {
+  .indent-reset ();
+  margin-left: -5%;
+
+  fill: rgba(40, 54, 69, 0.3);
+
+  @media (max-width: @mobile-width-only) {
+    &:last-of-type {
+      align-self: center;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+
+  &--current {
+    & .upload-photo__filter-img {
+      fill: #d22856;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+
+    margin: 0 auto 47px;
+
+    width: 275px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 48px;
+
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: rgba(40, 54, 69, 0.1);
+    }
+
+    &:nth-of-type(2) .upload-photo__filter-img {
+      width: 24px;
+      height: 27px;
+    }
+
+    &:nth-of-type(2) .upload-photo__range-toggle {
+      left: 14%;
+    }
+
+    &:last-of-type .upload-photo__filter-img {
+      width: 16px;
+      height: 16px;
+      padding-left: 6px;
+    }
+
+    &:last-of-type .upload-photo__range-toggle {
+      left: 50%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
+
+    &:first-of-type .upload-photo__filter-img {
+      width: 44px;
+      height: 44px;
+      margin-top: -14px;
+    }
+
+    &:nth-of-type(2) .upload-photo__filter-img {
+      width: 48px;
+      height: 43px;
+      margin-top: -9px;
+    }
+
+    &:last-of-type .upload-photo__filter-img {
+      width: 32px;
+      height: 32px;
+      padding-left: 6px;
+      margin-top: -4px;
+    }
+  }
+}
+
+.upload-photo__filter-button {
   border: none;
   outline: none;
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
-    min-height: 72px;
+    width: 22px;
+    height: 24px;
+    margin-left: -17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -44px;
   }
 }
 
-.upload-photo__filter-img--current {
-  fill: #d22856;
+.upload-photo__filter-img {
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 24px;
+
+    fill: #d22856;
+  }
+}
+
+.upload-photo__range {
+  position: relative;
+}
+
+.upload-photo__scale {
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+  height: 2px;
+  background-color: black;
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+  }
+}
+
+.upload-photo__range-toggle {
+  position: absolute;
+  top: -6px;
+  left: 80%;
+
+  width: 14px;
+  height: 14px;
+
+  box-sizing: border-box;
+  border: 2px solid #d22856;
+  border-radius: 100%;
+
+  background-color: #f2f2f2;
+
+  &:active {
+    background-color: #d22856;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .upload-photo__range {
+    display: none;
+  }
+
+  .upload-photo__filter-item--current {
+    & .upload-photo__range {
+      display: block;
+
+      width: 100%;
+      position: absolute;
+      top: 85px;
+      left: 0;
+    }
+  }
+
+  .upload-photo__filter {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 121px;
+
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: rgba(40, 54, 69, 0.1);
+    }
+  }
 }
 
 .upload-photo__button-list {
+  margin-top: 110px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 45px;
+  }
+
   @media (min-width: @desktop-width) {
     align-self: center;
     display: flex;
+    margin-top: 124px;
   }
 }
 
 .upload-photo__button {
-  padding: 20px 0 21px;
+  padding: 13px 0 15px;
   margin-bottom: 12px;
 
   display: inline-block;
   width: 280px;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   background-color: #f2f2f2;
 
   font-size: 18px;
   font-weight: 700;
 
   border-radius: 33px;
+  outline: none;
 
   &--submit {
     border: 3px solid #d22856;
     color: #d22856;
+
+    &:hover,
+    &:focus {
+      background-color: #d22856;
+      color: white;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--cancel {
-    border: 3px solid #283645;
-    color: #283645;
-    opacity: 0.1;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    color: rgba(40, 54, 69, 0.1);
+
+    &:hover,
+    &:focus {
+      color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0.3);
+    }
+
+    &:active {
+      background-color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0);
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &:last-child {
@@ -125,11 +353,17 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 20px 0 21px;
+    padding: 12px 0 16px;
     width: 260px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
     width: 183px;
+    height: 55px;
+
+    &:first-of-type {
+      margin-right: 43px;
+    }
   }
 }
