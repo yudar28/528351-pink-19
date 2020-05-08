@@ -60,14 +60,30 @@
 
     padding: 0;
     box-shadow: none;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: -11px;
+        left: 0;
+
+        height: 3px;
+
+        background: white;
+      }
+    }
   }
 }
 
-.main-nav__item a {
+.main-nav__item a[href] {
   color: white;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: #d22856;
   }
 

@@ -3,27 +3,38 @@
 }
 
 .tariff__wrapper {
-  padding-top: 50px;
+  padding-top: 90px;
+
+  background: url("../img/bg-triangle-white.svg") no-repeat 0 0;
+  background-size: 100% auto;
 
   @media (min-width: @tablet-width) {
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding-top: 87px;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 149px;
+    padding-bottom: 57px;
   }
 }
 
 .tariff__list {
-  margin: 0 auto 45px;
+  margin: 0 auto 37px;
   padding-top: 100px;
 
-  width: 828px;
+  width: 831px;
 
   text-transform: uppercase;
 
   background-color: white;
   border-collapse: collapse;
 
+  transform: translateX(-255px);
+
   @media (min-width: @tablet-width) {
     width: 616px;
+    transform: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -43,29 +54,117 @@
   border-right: 2px solid #e5e5e5;
   border-bottom: 2px solid #283645;
   border-left: 2px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    &:last-of-type {
+      border-right: 2px solid #283645;
+    }
+
+    &:nth-of-type(2) {
+      border-left: 2px solid #283645;
+    }
+  }
+
+  &--hit {
+    position: relative;
+
+    &::before {
+      content: "хит";
+
+      position: absolute;
+      top: 6px;
+      left: 7px;
+
+      .font(14px, 400, 2.1);
+
+      transform: rotate(-45deg);
+
+      z-index: 2;
+
+      @media (min-width: @tablet-width) {
+        font-weight: 600;
+        top: 2px;
+        left: 5px;
+      }
+
+      @media (min-width: @desktop-width) {
+        font-weight: 400;
+        top: 10px;
+        left: 10px;
+      }
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -2px;
+      left: -3px;
+
+      width: 74px;
+      height: 73px;
+
+      background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
+      background-size: 74px 73px;
+      z-index: 1;
+
+      @media (min-width: @tablet-width) {
+        left: 0;
+        width: 61px;
+        height: 61px;
+
+        background-size: 61px 61px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 73px;
+        height: 74px;
+
+        background-size: 73px 74px;
+      }
+    }
+  }
 }
 
 .tariff__name {
   .indent-reset();
-  padding-top: 21px;
+  padding-top: 13px;
+  padding-bottom: 3px;
 
-  font-size: 18px;
-  font-weight: 700;
+  .font(18px, 700, 1.67);
+
+  @media (min-width: @tablet-width) {
+    padding-top: 9px;
+    padding-bottom: 0;
+    .font(16px, 700, 1.88);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 14px;
+    .font(18px, 700, 1.67);
+  }
 }
 
 .tarrif__price {
   .indent-reset();
-  padding-bottom: 19px;
+  padding-bottom: 16px;
 
-  font-size: 24px;
-  font-weight: 300;
+  .font(24px, 300, 1.25);
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 4px;
+    .font(18px, 300, 1.67);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 19px;
+    .font(24px, 300, 1.25);
+  }
 }
 
 .tariff__cell {
   width: 276px;
-  padding-left: 22px;
-
-  height: 59px;
+  padding: 20px 0 20px 20px;
 
   font-size: 14px;
   font-weight: 400;
@@ -73,8 +172,32 @@
   border: 2px solid #e5e5e5;
   border-right: none;
 
+  background: url("../img/icon-yes.svg") no-repeat 227px center;
+  background-size: 31px 21px;
+
+  &--no {
+    background: url("../img/icon-no.svg") no-repeat 229px 15px;
+    background-size: 27px 26px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 25%;
+    padding: 12px 0 14px 13px;
+    background-position: center center;
+
+    min-height: 45px;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &:last-child {
+      border-right: 2px solid #e5e5e5;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 13px 0 16px 20px;
   }
 }
 
@@ -83,6 +206,16 @@
 
   @media (min-width: @tablet-width) {
     display: table-cell;
+    background-image: none;
+    text-transform: none;
+
+    text-indent: 0;
+    white-space: inherit;
+    overflow: inherit;
+  }
+
+  @media (min-width: @desktop-width) {
+    .font (18px, 400, 1.67);
   }
 }
 
@@ -93,15 +226,8 @@
   border-left: none;
 }
 
-.tariff__hit {
-  background-image: url("../img/bg-hit-tablet.svg");
-  background-repeat: no-repeat;
-  background-size: 74px 73px;
-  background-position: -2px -2px;
-}
-
 .tariff__toggles {
-  padding-bottom: 51px;
+  padding-bottom: 39px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
