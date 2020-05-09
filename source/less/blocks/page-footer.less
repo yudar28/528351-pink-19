@@ -41,25 +41,23 @@
 }
 
 .page-footer__logo-link {
+  display: block;
   margin: 40px auto 40px;
-
-  background: url("../img/logo-pink-blue-mobile.svg") no-repeat center center;
 
   width: 147px;
   height: 40px;
 
-  display: block;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-
-  &:hover,
-  &:focus {
-    background-image: url("../img/logo-pink-active-mobile.svg");
+  &:hover {
+    & path {
+      fill: #d22856;
+    }
   }
 
   &:active {
-    background-image: url("../img/logo-pink-blue-mobile.svg");
+    & g path {
+      fill: #283645;
+    }
+
     opacity: 0.3;
   }
 
@@ -89,37 +87,28 @@
 }
 
 .page-footer__social-link {
-  width: 46px;
-  height: 46px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 11px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 49px;
+  height: 49px;
 
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
 
-  display: block;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-
-  &:hover,
-  &:focus {
+  &:hover {
     border: 3px solid rgba(40, 54, 69, 1);
   }
 
   &:active {
     opacity: 0.1;
   }
-}
 
-.page-footer__social-link--twitter {
-  background: url("../img/icon-twitter.svg") no-repeat center center;
-}
-
-.page-footer__social-link--facebook {
-  background: url("../img/icon-facebook.svg") no-repeat center center;
-}
-
-.page-footer__social-link--youtube {
-  background: url("../img/icon-youtube.svg") no-repeat center center;
+  &--twitter {
+    padding-left: 2px;
+  }
 }
 
 .page-footer__copyright {
@@ -155,8 +144,7 @@
     fill: #d22856;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover path {
     fill: #283645;
   }
 
