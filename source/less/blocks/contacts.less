@@ -47,8 +47,8 @@
 
 .contacts__item {
   margin-bottom: 19px;
-  padding-right: 39px;
-  padding-left: 44px;
+  padding-right: 50px;
+  padding-left: 56px;
 
   &:last-child {
     margin-bottom: 36px;
@@ -121,16 +121,8 @@
 
   position: relative;
 
-  @media (min-width: @tablet-width) {
-    height: 373px;
-  }
-
-  @media (min-width: @desktop-width) {
-    height: 513px;
-  }
-
   &::before {
-    content: " ";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -143,14 +135,32 @@
   }
 
   &::after {
-    content: " ";
+    content: "";
     position: absolute;
     top: 94px;
     left: 44.5%;
     background-image: url("../img/icon-map-marker.svg");
     z-index: 3;
     width: 36px;
-    height: 35px;
+    height: 36px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+
+    &::after {
+      top: 193px;
+      left: 47.5%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 513px;
+
+    &::after {
+      top: 221px;
+      left: 48.5%;
+    }
   }
 }
 
@@ -159,7 +169,7 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    margin-top: -271px;
+    margin-top: -203px;
   }
 
   @media (min-width: @desktop-width) {
