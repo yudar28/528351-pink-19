@@ -79,17 +79,14 @@
 }
 
 .page-header__logo-link {
-  margin-left: 20px;
-
-  width: 75px;
-  height: 22px;
+  margin-left: -52px;
+  margin-top: -11px;
 
   & path {
     fill: #ffffff;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     & path {
       fill: #d22856;
     }
@@ -97,20 +94,62 @@
 
   &:active {
     & path {
+      fill: #ffffff;
       opacity: 0.3;
     }
   }
 
   @media (min-width: @tablet-width) {
-    width: 147px;
-    height: 40px;
+    margin-left: 21px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
+    margin-top: -10px;
+  }
+}
 
-    width: 147px;
-    height: 40px;
+.page-header__logo-glasses-drop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.page-header__logo-full-glasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-one-star {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+
+    & path {
+      fill: #d22856;
+    }
+  }
+}
+
+.page-header__logo-stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+
+    & path {
+      fill: #d22856;
+    }
   }
 }
 

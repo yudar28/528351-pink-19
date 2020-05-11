@@ -63,6 +63,59 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-top: -17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -12px;
+  }
+}
+
+.page-footer__logo-pink {
+  & path {
+    fill: black;
+  }
+}
+
+.page-footer__logo-glasses-drop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.page-footer__logo-full-glasses {
+  & path {
+    fill: #d22856;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-one-star {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+
+    & path {
+      fill: #d22856;
+    }
+  }
+}
+
+.page-footer__logo-stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+
+    & path {
+      fill: black;
+    }
   }
 }
 
