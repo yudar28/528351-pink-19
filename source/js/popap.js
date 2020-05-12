@@ -1,5 +1,5 @@
 var buttonSubmit = document.querySelector(".form__submit");
-var form = document.querySelector(".form");
+// var form = document.querySelector(".form");
 
 var popap = document.querySelector(".popap");
 var popapMistake = document.querySelector(".popap--mistake");
