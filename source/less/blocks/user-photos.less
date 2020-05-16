@@ -2,6 +2,10 @@
   background-color: white;
 }
 
+.user-photos__wrapper {
+  overflow: hidden;
+}
+
 .user-photos__title {
   .indent-reset ();
   padding: 95px 76px 80px;
@@ -215,9 +219,20 @@
         top: 29px;
         left: 444px;
 
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          // margin-left: -100px;
+          // padding: 0;
+          width: 500px;
+        }
+
         &::before {
-          top: 1px;
+          top: 4px;
           left: 106px;
+
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            left: 310px;
+            top: 0;
+          }
         }
       }
     }
@@ -299,6 +314,11 @@
     top: 3px;
     left: 18px;
 
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      top: 0;
+      height: 14px;
+    }
+
     content: " ";
     background-image: url("../img/icon-heart.svg");
     background-size: 13px 12px;
@@ -314,9 +334,44 @@
     margin-bottom: 27px;
     align-self: flex-start;
 
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 400px;
+      margin-bottom: 0;
+      margin-top: 46px;
+      margin-left: -154px;
+      flex-grow: 1;
+
+      &::before {
+        left: 380px;
+        top: 0;
+      }
+    }
+
     &::before {
       top: 1px;
       left: 227px;
+    }
+  }
+}
+
+.user-photos__item:nth-of-type(2),
+.user-photos__item:nth-of-type(4) {
+  @media (min-width: @tablet-width) {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .user-photos__heart {
+        margin-top: 23px;
+      }
+    }
+  }
+}
+
+.user-photos__item:nth-of-type(1) {
+  @media (min-width: @tablet-width) {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .user-photos__heart {
+        margin-top: 0;
+        margin-left: -200px;
+      }
     }
   }
 }

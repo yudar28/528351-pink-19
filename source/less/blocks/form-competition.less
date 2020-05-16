@@ -1,0 +1,67 @@
+.form-competition__title {
+  .indent-reset ();
+  padding: 94px 46px 44px 46px;
+
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-size: 659px auto;
+  background-color: #1d2631;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center;
+  }
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    line-height: 1.2;
+    font-size: 50px;
+
+    padding: 180px 46px 79px 46px;
+
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat center top;
+      background-position-y: -59px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 284px;
+
+    margin-top: 0;
+    padding: 174px 220px 100px 220px;
+
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat center top;
+      background-size: auto 887px;
+    }
+  }
+}
+
+.form-competition__text {
+  .indent-reset ();
+  padding: 45px 23px 20px 24px;
+  .font(14px, 400, 2.14);
+  color: #283645;
+  text-align: center;
+
+  & span {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 92px 57px 17px;
+    .font(18px, 400, 1.67);
+
+    & span {
+      display: inherit;
+    }
+  }
+}

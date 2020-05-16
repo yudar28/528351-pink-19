@@ -1,11 +1,11 @@
-.popap {
+.popup {
   width: 100%;
 
   position: fixed;
   top: 15%;
 }
 
-.popap__wrap {
+.popup__wrap {
   width: 320px;
   margin: 0 auto;
 
@@ -22,11 +22,11 @@
   }
 }
 
-.popap--none {
+.popup--none {
   display: none;
 }
 
-.popap__title {
+.popup__title {
   .indent-reset ();
   padding-top: 46px;
 
@@ -38,7 +38,7 @@
   }
 }
 
-.popap__text {
+.popup__text {
   .indent-reset ();
   padding: 25px 26px 35px 24px;
 
@@ -55,7 +55,7 @@
   }
 }
 
-.popap__btn {
+.popup__btn {
   width: 276px;
   min-height: 59px;
 
@@ -83,8 +83,8 @@
   }
 }
 
-.popap--mistake {
-  & .popap__btn {
+.popup--mistake {
+  & .popup__btn {
     margin-bottom: 52px;
 
     @media (min-width: @desktop-width) {
@@ -92,15 +92,15 @@
     }
   }
 
-  & .popap__back {
+  & .popup__back {
     @media (min-width: @desktop-width) {
       background-color: #f2f2f2;
     }
   }
 }
 
-.popap--submit {
-  & .popap__btn {
+.popup--submit {
+  & .popup__btn {
     margin: 50px auto 54px;
 
     @media (min-width: @desktop-width) {
@@ -108,7 +108,7 @@
     }
   }
 
-  & .popap__back {
+  & .popup__back {
     background-color: #f2f2f2;
   }
 }

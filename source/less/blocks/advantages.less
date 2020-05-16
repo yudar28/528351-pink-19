@@ -2,14 +2,12 @@
   background-color: #f2f2f2;
 
   text-align: center;
+}
 
+.advantages__wrapper {
   @media (min-width: @desktop-width) {
-    min-height: 932px;
-
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position-y: -102px;
+    background: url("../img/bg-triangle-white.svg") no-repeat center top;
+    background-size: 100% auto;
   }
 }
 
@@ -56,10 +54,7 @@
     }
 
     &:last-of-type {
-      padding-bottom: 75px;
-      padding-right: 300px;
-      padding-left: 300px;
-
+      padding: 0 250px 78px;
       line-height: 1.12;
     }
   }
@@ -105,12 +100,12 @@
     display: flex;
     justify-content: space-between;
 
+    background-image: none;
+
     margin: 0 auto;
     padding-top: 0;
 
-    background-image: none;
-    width: 74.3%;
-
+    width: 940px;
     text-align: center;
   }
 }
@@ -133,36 +128,17 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding-top: 332px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+}
 
-    width: 26.8%;
+.advantages__item img {
+  display: none;
 
-    &:first-of-type {
-      background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center top;
-
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background: url("../img/iphone-screen-1-desktop@2x.png") no-repeat center top;
-        background-size: 293px 302px;
-      }
-    }
-
-    &:nth-of-type(2) {
-      background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center top;
-
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background: url("../img/iphone-screen-2-desktop@2x.png") no-repeat center top;
-        background-size: 293px 302px;
-      }
-    }
-
-    &:last-of-type {
-      background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat center top;
-
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background: url("../img/iphone-screen-3-desktop@2x.png") no-repeat center top;
-        background-size: 293px 302px;
-      }
-    }
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    height: 302px;
   }
 }
 
@@ -173,7 +149,10 @@
   font-weight: 700;
 
   @media (min-width: @desktop-width) {
+    margin-top: 51px;
+    margin-bottom: 24px;
     .font (30px, 700, 30px);
+    padding: 0 30px;
   }
 }
 
@@ -182,6 +161,7 @@
 
   @media (min-width: @desktop-width) {
     .font (18px, 400, 30px);
+    padding: 0 26px;
   }
 }
 
