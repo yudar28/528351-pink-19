@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -10,7 +11,7 @@
     <header class="page-header page-header--nojs">
       <div class="page-header__top-menu">
         <a class="page-header__logo-link" href="index.html">
-          <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g class="page-header__logo-pink">
               <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
               <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -79,11 +80,14 @@
           <div class="user-photos__list">
 
             <article class="user-photos__item user-photos__panorama-of-day">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="user-photos__photo user-photos__photo--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="100%" height="137px;" alt="Панорама от Ани">
-              </picture>
+              <h2 class="visually-hidden">Фото от Анны</h2>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="user-photos__photo user-photos__photo--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама от Ани">
+                </picture>
+              </a>
               <blockquote class="user-photos__user user-photos__user--panorama">
                 <div class="user-photos__user-wrap">
                   <p class="user-photos__author-name">Анна <time class="user-photos__time" datetime="2020-03-30T15:00">(5 минут назад)</time></p>
@@ -94,11 +98,14 @@
             </article>
 
             <article class="user-photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                <img class="user-photos__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280px" height="180px" alt="Панорама от Левона">
-              </picture>
+              <h2 class="visually-hidden">Фото от Левона</h2>
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="user-photos__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Панорама от Левона">
+                </picture>
+              </a>
               <blockquote class="user-photos__user">
                 <div class="user-photos__user-wrap">
                   <p class="user-photos__author-name">Левон <time class="user-photos__time" datetime="2020-03-30T15:00">(5 часов назад)</time></p>
@@ -109,11 +116,14 @@
             </article>
 
             <article class="user-photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                <img class="user-photos__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280px" height="180px" alt="Фото от Антона">
-              </picture>
+              <h2 class="visually-hidden">Фото от Антона</h2>
+              <a href="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="user-photos__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Антона">
+                </picture>
+              </a>
               <blockquote class="user-photos__user">
                 <div class="user-photos__user-wrap">
                   <p class="user-photos__author-name">Антон <time class="user-photos__time" datetime="2020-03-30T15:00">(12 часов назад)</time></p>
@@ -124,11 +134,14 @@
             </article>
 
             <article class="user-photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                <img class="user-photos__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280px" height="180px" alt="Фото от Бориса">
-              </picture>
+              <h2 class="visually-hidden">Фото от Бориса</h2>
+              <a href="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="user-photos__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Бориса">
+                </picture>
+              </a>
               <blockquote class="user-photos__user">
                 <div class="user-photos__user-wrap">
                   <p class="user-photos__author-name">Борис <time class="user-photos__time" datetime="2020-03-30T15:00">(20 часов назад)</time> </p>
@@ -139,11 +152,14 @@
             </article>
 
             <article class="user-photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                <img class="user-photos__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280px" height="180px" alt="Фото от Сергея">
-              </picture>
+              <h2 class="visually-hidden">Фото от Сергея</h2>
+              <a href="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="user-photos__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Сергея">
+                </picture>
+              </a>
               <blockquote class="user-photos__user">
                 <div class="user-photos__user-wrap">
                   <p class="user-photos__author-name">Сергей <time class="user-photos__time" datetime="2020-03-30T15:00">(25 часов назад)</time></p>
@@ -154,11 +170,14 @@
             </article>
 
             <article class="user-photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                <img class="user-photos__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280px" height="180px" alt="Фото от Максима">
-              </picture>
+              <h2 class="visually-hidden">ФОто от Максима</h2>
+              <a href="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="user-photos__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Максима">
+                </picture>
+              </a>
               <blockquote class="user-photos__user">
                 <div class="user-photos__user-wrap">
                   <p class="user-photos__author-name">Максим <time class="user-photos__time" datetime="2020-03-30T15:00">(40 часов назад)</time></p>
@@ -169,11 +188,14 @@
             </article>
 
             <article class="user-photos__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                <img class="user-photos__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280px" height="180px" alt="Фото от Надежды">
-              </picture>
+              <h2 class="visually-hidden">Фото от Надежды</h2>
+              <a href="">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="user-photos__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Надежды">
+                </picture>
+              </a>
               <blockquote class="user-photos__user">
                 <div class="user-photos__user-wrap">
                   <p class="user-photos__author-name">Надежда <time class="user-photos__time" datetime="2020-03-30T15:00">(45 часов назад)</time></p>
@@ -190,63 +212,60 @@
       <section class="upload-photo">
         <p class="upload-photo__text">Затмите их всех!</p>
         <p class="upload-photo__text">Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="upload-photo__wrapper">
+        <form class="upload-photo__form" method="post" action="https://echo.htmlacademy.ru/">
           <h2 class="visually-hidden">Загрузка картинок в приложение</h2>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-            <img class="upload-photo__picture" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Картинка пользователя">
-          </picture>
+          <input class="upload-photo__load-picture" type="file" name="load-picture" id="load-picture">
+          <label for="load-picture">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="upload-photo__picture" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Картинка пользователя">
+            </picture>
+          </label>
           <div class="upload-photo__filter">
             <div class="upload-photo__filter-list">
               <div class="upload-photo__filter-item upload-photo__filter-item--current">
                 <button class="upload-photo__filter-button" type="button">
                   <span class="visually-hidden">Обрезать фото"</span>
-                  <svg class="upload-photo__filter-img" version="1.0" xmlns="http://www.w3.org/2000/svg" width="44px" height="44px" viewBox="0 0 44 44"><path fill="none" d="M0 0h48v48H0V0z"/><path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/></svg>
+                  <svg class="upload-photo__filter-img" xmlns="http://www.w3.org/2000/svg" width="44px" height="44px" viewBox="0 0 44 44"><path fill="none" d="M0 0h48v48H0V0z"/><path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/></svg>
                 </button>
                 <div class="upload-photo__range">
-                  <div class="upload-photo__scale">
-                    <div class="upload-photo__range-toggle"></div>
-                  </div>
+                  <input class="upload-photo__scale" type="range" name="range" min="1" max="100" value="50">
                 </div>
               </div>
               <div class="upload-photo__filter-item">
                 <button class="upload-photo__filter-button" type="button">
                   <span class="visually-hidden">Добавить цветовой фильтр</span>
-                  <svg class="upload-photo__filter-img" version="1.0" xmlns="http://www.w3.org/2000/svg" width="48px" height="43px" viewBox="0 0 48 43"><path fill="none" d="M0 0h48v48H0V0z"/><path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/></svg>
+                  <svg class="upload-photo__filter-img" xmlns="http://www.w3.org/2000/svg" width="48px" height="43px" viewBox="0 0 48 43"><path fill="none" d="M0 0h48v48H0V0z"/><path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/></svg>
                 </button>
                 <div class="upload-photo__range">
-                  <div class="upload-photo__scale">
-                    <div class="upload-photo__range-toggle"></div>
-                  </div>
+                  <input class="upload-photo__scale" type="range" name="range" min="1" max="100" value="25">
                 </div>
               </div>
               <div class="upload-photo__filter-item">
                 <button class="upload-photo__filter-button" type="button">
                   <span class="visually-hidden">Изменить яркость</span>
-                  <svg class="upload-photo__filter-img" version="1.0" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="-35.422 -7.96 31.92 31.92"><path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/><path d="M-19.462 16.331a8.519 8.519 0 008.52-8.52 8.518 8.518 0 00-8.52-8.519"/></svg>
+                  <svg class="upload-photo__filter-img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="-35.422 -7.96 31.92 31.92"><path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/><path d="M-19.462 16.331a8.519 8.519 0 008.52-8.52 8.518 8.518 0 00-8.52-8.519"/></svg>
                 </button>
                 <div class="upload-photo__range">
-                  <div class="upload-photo__scale">
-                    <div class="upload-photo__range-toggle"></div>
-                  </div>
+                  <input class="upload-photo__scale" type="range" name="range" min="1" max="100" value="75">
                 </div>
               </div>
             </div>
             <div class="upload-photo__button-list">
-                <button class="upload-photo__button upload-photo__button--submit" type="button">Запостить</button>
-                <button class="upload-photo__button upload-photo__button--cancel" type="button">Отмена</button>
+              <input class="upload-photo__button upload-photo__button--submit" type="submit" name="upload-photo__button--submit" value="Запостить">
+              <input class="upload-photo__button upload-photo__button--cancel" type="reset" name="upload-photo__button--cancel" value="Отмена">
             </div>
-            </div>
-        </div>
+          </div>
+        </form>
       </section>
 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo-link" href="#">
-          <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+        <a class="page-footer__logo-link" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g class="page-footer__logo-pink">
               <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
               <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -287,7 +306,7 @@
         <ul class="page-footer__social-list">
           <li class="page-footer__social-item">
             <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
-              <svg fill="#d22856" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                 <g id="W6EeEF_1_">
                   <g>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
@@ -299,7 +318,7 @@
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
-              <svg fill="#d22856" version="1.0"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+              <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                 <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
               </svg>
               <span class="visually-hidden">Фейсбук</span>
@@ -307,7 +326,7 @@
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
-              <svg fill="#d22856" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+              <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                 <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
               </svg>
               <span class="visually-hidden">Ютуб</span>
@@ -316,12 +335,13 @@
         </ul>
         <div class="page-footer__copyright">
           <p class="page-footer__copyright-text">Разработано</p>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/></svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="js/main-nav.js"></script>
+    <script src="js/main-nav.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>

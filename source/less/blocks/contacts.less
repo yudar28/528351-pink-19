@@ -77,7 +77,8 @@
       order: 3;
     }
 
-    padding-right: 9px;
+    padding-right: 0;
+    padding-left: 31px;
   }
 }
 
@@ -158,21 +159,26 @@
     height: 513px;
 
     &::after {
-      top: 221px;
+      top: 260px;
       left: 48.5%;
     }
   }
 }
 
-.contacts__img {
-  margin-top: -445px;
+.contacts__map iframe {
   width: 100%;
-
-  @media (min-width: @tablet-width) {
-    margin-top: -203px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: -129px;
-  }
+  height: 100%;
 }
+
+// .contacts__img {
+//   margin-top: -445px;
+//   width: 100%;
+
+//   @media (min-width: @tablet-width) {
+//     margin-top: -203px;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     margin-top: -129px;
+//   }
+// }
