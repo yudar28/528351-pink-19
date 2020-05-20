@@ -47,20 +47,6 @@
   width: 147px;
   height: 40px;
 
-  &:hover {
-    & path {
-      fill: #d22856;
-    }
-  }
-
-  &:active {
-    & g path {
-      fill: #283645;
-    }
-
-    opacity: 0.3;
-  }
-
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-top: -17px;
@@ -71,13 +57,85 @@
   }
 }
 
-.page-footer__logo-pink {
-  & path {
-    fill: black;
-  }
+// .page-footer__logo-link:hover path {
+//   fill: #d22856;
+// }
+
+// .page-footer__logo-link:active {
+//   opacity: 0.3;
+// }
+
+// .page-footer__logo-link:active g path {
+//   fill: #283645;
+// }
+
+// .page-footer__logo-pink path {
+//   fill: black;
+// }
+
+// .page-footer__logo-glasses-drop {
+//   display: none;
+
+//   @media (min-width: @desktop-width) {
+//     display: inline-block;
+//   }
+// }
+
+// .page-footer__logo-full-glasses path {
+//   fill: #d22856;
+// }
+
+// .page-footer__logo-full-glasses {
+//   @media (min-width: @desktop-width) {
+//     display: none;
+//   }
+// }
+
+// .page-footer__logo-one-star {
+//   display: none;
+
+//   @media (min-width: @desktop-width) {
+//     display: inline-block;
+//   }
+// }
+
+// .page-footer__logo-one-star path {
+//   @media (min-width: @desktop-width) {
+//     fill: #d22856;
+//   }
+// }
+
+// .page-footer__logo-stars {
+//   display: none;
+
+//   @media (min-width: @desktop-width) {
+//     display: inline-block;
+//   }
+// }
+
+// .page-footer__logo-stars path {
+//   @media (min-width: @desktop-width) {
+//     fill: black;
+//   }
+// }
+
+.page-footer__logo-link:hover {
+  fill: #d22856;
 }
 
-.page-footer__logo-glasses-drop {
+.page-footer__logo-link:active {
+  opacity: 0.3;
+}
+
+.page-footer__logo-svg .page-footer__logo-pink {
+  fill: black;
+}
+
+.page-footer__logo-link:active .page-footer__logo-svg {
+  fill: black;
+}
+
+.page-footer__logo-svg .page-footer__logo-glasses-drop {
   display: none;
 
   @media (min-width: @desktop-width) {
@@ -85,10 +143,12 @@
   }
 }
 
+.page-footer__logo-glasses-drop {
+  fill: #d22856;
+}
+
 .page-footer__logo-full-glasses {
-  & path {
-    fill: #d22856;
-  }
+  fill: #d22856;
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -100,10 +160,12 @@
 
   @media (min-width: @desktop-width) {
     display: inline-block;
+  }
+}
 
-    & path {
-      fill: #d22856;
-    }
+.page-footer__logo-one-star path {
+  @media (min-width: @desktop-width) {
+    fill: #d22856;
   }
 }
 
@@ -112,10 +174,12 @@
 
   @media (min-width: @desktop-width) {
     display: inline-block;
+  }
+}
 
-    & path {
-      fill: black;
-    }
+.page-footer__logo-svg .page-footer__logo-stars {
+  @media (min-width: @desktop-width) {
+    fill: black;
   }
 }
 
@@ -132,6 +196,7 @@
 }
 
 .page-footer__social-item {
+  list-style-type: none;
   margin-right: 17px;
 
   &:last-child {
@@ -162,6 +227,14 @@
   &--twitter {
     padding-left: 2px;
   }
+
+  &--youtube {
+    padding-left: 3px;
+  }
+}
+
+.page-footer__social-link svg {
+  fill: #d22856;
 }
 
 .page-footer__copyright {
@@ -193,15 +266,15 @@
   width: 27px;
   height: 34px;
 
-  & path {
-    fill: #d22856;
-  }
-
-  &:hover path {
-    fill: #283645;
-  }
-
   &:active {
     opacity: 0.3;
   }
+}
+
+.page-footer__copyright-link svg {
+  fill: #d22856;
+}
+
+.page-footer__copyright-link:hover svg {
+  fill: #283645;
 }

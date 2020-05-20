@@ -17,7 +17,7 @@
       background:
         url("../img/iphone-hand-tablet@2x.png") no-repeat 47% bottom,
         url("../img/bg-back-tablet@2x.jpg") no-repeat center 0;
-      background-size: 697px 545px, auto 739px;
+      background-size: 697px 545px, auto 100%;
     }
   }
 
@@ -32,7 +32,7 @@
       background:
         url("../img/iphone-hand-desktop@2x.png") no-repeat right bottom,
         url("../img/bg-back-desktop@2x.jpg") no-repeat center center;
-      background-size: 1056px 644px, auto 900px;
+      background-size: 1056px 644px, auto 100%;
     }
   }
 }
@@ -153,23 +153,19 @@
 }
 
 .mobile-app__item {
-  &:first-of-type {
-    & svg {
-      margin-top: -3px;
-    }
-  }
+  list-style-type: none;
+}
 
-  &:nth-of-type(2) {
-    & svg {
-      margin-top: 3px;
-    }
-  }
+.mobile-app__icon-apple {
+  margin-top: -3px;
+}
 
-  &:last-of-type {
-    & svg {
-      margin-top: 4px;
-    }
-  }
+.mobile-app__icon-android {
+  margin-top: 3px;
+}
+
+.mobile-app__icon-windows {
+  margin-top: 4px;
 }
 
 .mobile-app__available {

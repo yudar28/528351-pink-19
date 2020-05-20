@@ -119,23 +119,6 @@
   margin-left: -52px;
   margin-top: -11px;
 
-  & path {
-    fill: #ffffff;
-  }
-
-  &:hover {
-    & path {
-      fill: #d22856;
-    }
-  }
-
-  &:active {
-    & path {
-      fill: #ffffff;
-      opacity: 0.3;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     margin-left: 21px;
   }
@@ -144,6 +127,83 @@
     margin: 0 auto;
     margin-top: -10px;
   }
+}
+
+// без спрайта
+// .page-header__logo-link path {
+//   fill: #ffffff;
+// }
+
+// .page-header__logo-link:hover path {
+//   fill: #d22856;
+// }
+
+// .page-header__logo-link:active path {
+//   fill: #ffffff;
+//   opacity: 0.3;
+// }
+
+// .page-header__logo-glasses-drop {
+//   display: none;
+
+//   @media (min-width: @desktop-width) {
+//     display: inline-block;
+//   }
+// }
+
+// .page-header__logo-full-glasses {
+//   display: none;
+
+//   @media (min-width: @tablet-width) {
+//     display: inline-block;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     display: none;
+//   }
+// }
+
+// .page-header__logo-one-star {
+//   display: none;
+
+//   @media (min-width: @desktop-width) {
+//     display: inline-block;
+//   }
+// }
+
+// .page-header__logo-one-star path {
+//   @media (min-width: @desktop-width) {
+//     fill: #d22856;
+//   }
+// }
+
+// .page-header__logo-stars {
+//   display: none;
+
+//   @media (min-width: @desktop-width) {
+//     display: inline-block;
+//   }
+// }
+
+// .page-header__logo-stars path {
+//   @media (min-width: @desktop-width) {
+//     fill: #d22856;
+//   }
+// }
+// без спрайта
+
+// со спрайтом на странице
+.page-header__logo-link .page-header__logo-svg {
+  fill: #ffffff;
+}
+
+.page-header__logo-svg:hover {
+  fill: #d22856;
+}
+
+.page-header__logo-svg:active {
+  fill: #ffffff;
+  opacity: 0.3;
 }
 
 .page-header__logo-glasses-drop {
@@ -171,10 +231,7 @@
 
   @media (min-width: @desktop-width) {
     display: inline-block;
-
-    & path {
-      fill: #d22856;
-    }
+    fill: #d22856;
   }
 }
 
@@ -183,12 +240,11 @@
 
   @media (min-width: @desktop-width) {
     display: inline-block;
-
-    & path {
-      fill: #d22856;
-    }
+    fill: #d22856;
   }
 }
+
+// со спрайтом на странице
 
 .page-header__toggle {
   margin-right: 20px;

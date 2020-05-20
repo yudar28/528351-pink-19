@@ -48,10 +48,6 @@
 
       background-color: white;
       width: 436px;
-
-      & br {
-        display: none;
-      }
     }
   }
 
@@ -82,6 +78,12 @@
         margin-left: -885px;
       }
     }
+  }
+}
+
+.form__legend--achievements br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -234,6 +236,7 @@
 }
 
 .form__checkbox-item {
+  list-style-type: none;
   position: relative;
   padding-left: 67px;
   margin-bottom: 52px;
@@ -523,10 +526,12 @@
     background-color: white;
     padding: 12px 0 13px;
     width: 368px;
+  }
+}
 
-    & br {
-      display: none;
-    }
+.form__legend--type-phone br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -547,6 +552,7 @@
 }
 
 .form__type-phone-item {
+  list-style-type: none;
   position: relative;
   padding-left: 68px;
   margin-bottom: 45px;
@@ -773,22 +779,20 @@
   text-transform: uppercase;
   color: #283645;
 
-  & span {
-    display: none;
-  }
-
-  & sup {
-    color: #d22856;
-  }
-
   @media (min-width: @tablet-width) {
     .indent-reset ();
     padding-top: 41px;
   }
+}
+
+.form__small span {
+  display: none;
 
   @media (min-width: @desktop-width) {
-    & span {
-      display: inline;
-    }
+    display: inline;
   }
+}
+
+.form__small sup {
+  color: #d22856;
 }

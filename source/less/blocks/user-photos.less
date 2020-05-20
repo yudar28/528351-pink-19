@@ -10,12 +10,12 @@
   .indent-reset ();
   padding: 95px 76px 80px;
 
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
   background-size: 100%;
   background-color: #1d2631;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center center;
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center;
     background-size: 659px auto;
   }
 
@@ -184,15 +184,15 @@
       margin-left: -20px;
       height: 509px;
     }
+  }
 
-    @media (min-width: @desktop-width) {
-      height: 400px;
+  @media (min-width: @desktop-width) {
+    height: 400px;
 
-      &--panorama {
-        width: 1200px;
-        margin-left: -130px;
-        height: 506px;
-      }
+    &--panorama {
+      width: 1200px;
+      margin-left: -130px;
+      height: 506px;
     }
   }
 }
@@ -213,28 +213,6 @@
     &--panorama {
       width: 564px;
       min-height: 121px;
-
-      & .user-photos__heart {
-        position: absolute;
-        top: 29px;
-        left: 444px;
-
-        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-          // margin-left: -100px;
-          // padding: 0;
-          width: 500px;
-        }
-
-        &::before {
-          top: 4px;
-          left: 106px;
-
-          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            left: 310px;
-            top: 0;
-          }
-        }
-      }
     }
   }
 
@@ -242,11 +220,33 @@
     &--panorama {
       width: 884px;
       min-height: 96px;
+    }
+  }
+}
 
-      & .user-photos__heart {
-        left: 761px;
+.user-photos__user--panorama .user-photos__heart {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 29px;
+    left: 444px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 500px;
+    }
+
+    &::before {
+      top: 4px;
+      left: 106px;
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        left: 310px;
+        top: 0;
       }
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 761px;
   }
 }
 

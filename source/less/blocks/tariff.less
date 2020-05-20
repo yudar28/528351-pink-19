@@ -65,64 +65,62 @@
       border-left: 2px solid #283645;
     }
   }
+}
 
-  &--hit {
-    position: relative;
+.tariff__about--hit {
+  position: relative;
 
-    &::before {
-      content: "хит";
+  &::before {
+    content: "хит";
 
-      position: absolute;
-      top: 6px;
-      left: 7px;
+    position: absolute;
+    top: 6px;
+    left: 7px;
 
-      .font(14px, 400, 2.1);
+    .font(14px, 400, 2.1);
 
-      transform: rotate(-45deg);
+    transform: rotate(-45deg);
 
-      z-index: 2;
+    z-index: 2;
 
-      @media (min-width: @tablet-width) {
-        font-weight: 600;
-        top: 2px;
-        left: 5px;
-      }
-
-      @media (min-width: @desktop-width) {
-        font-weight: 400;
-        top: 10px;
-        left: 10px;
-      }
+    @media (min-width: @tablet-width) {
+      font-weight: 600;
+      top: 2px;
+      left: 5px;
     }
 
-    &::after {
-      content: "";
+    @media (min-width: @desktop-width) {
+      font-weight: 400;
+      top: 10px;
+      left: 10px;
+    }
+  }
 
-      position: absolute;
-      top: -2px;
-      left: -3px;
+  &::after {
+    content: "";
 
-      width: 74px;
-      height: 73px;
+    position: absolute;
+    top: -2px;
+    left: -3px;
 
-      background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
-      background-size: 74px 73px;
-      z-index: 1;
+    width: 74px;
+    height: 73px;
 
-      @media (min-width: @tablet-width) {
-        left: 0;
-        width: 61px;
-        height: 61px;
+    background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
+    background-size: 74px 73px;
+    z-index: 1;
 
-        background-size: 61px 61px;
-      }
+    @media (min-width: @tablet-width) {
+      left: 0;
+      width: 61px;
+      height: 61px;
+      background-size: 61px 61px;
+    }
 
-      @media (min-width: @desktop-width) {
-        width: 73px;
-        height: 74px;
-
-        background-size: 73px 74px;
-      }
+    @media (min-width: @desktop-width) {
+      width: 73px;
+      height: 74px;
+      background-size: 73px 74px;
     }
   }
 }
@@ -194,14 +192,16 @@
     &:last-child {
       border-right: 2px solid #e5e5e5;
     }
-
-    & span {
-      display: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
     padding: 13px 0 16px 20px;
+  }
+}
+
+.tariff__cell span {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 

@@ -83,32 +83,28 @@
   }
 }
 
-.popup--mistake {
-  & .popup__btn {
-    margin-bottom: 52px;
+.popup--mistake .popup__btn {
+  margin-bottom: 52px;
 
-    @media (min-width: @desktop-width) {
-      margin: 49px auto 55px;
-    }
-  }
-
-  & .popup__back {
-    @media (min-width: @desktop-width) {
-      background-color: #f2f2f2;
-    }
+  @media (min-width: @desktop-width) {
+    margin: 49px auto 55px;
   }
 }
 
-.popup--submit {
-  & .popup__btn {
-    margin: 50px auto 54px;
-
-    @media (min-width: @desktop-width) {
-      width: 496px;
-    }
-  }
-
-  & .popup__back {
+.popup--mistake .popup__back {
+  @media (min-width: @desktop-width) {
     background-color: #f2f2f2;
   }
+}
+
+.popup--submit .popup__btn {
+  margin: 50px auto 54px;
+
+  @media (min-width: @desktop-width) {
+    width: 496px;
+  }
+}
+
+.popup--submit .popup__back {
+  background-color: #f2f2f2;
 }

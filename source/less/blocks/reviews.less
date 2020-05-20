@@ -79,11 +79,12 @@
     order: 1;
 
     font-size: 18px;
-    margin-top: 52px;
+    margin-top: 46px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
+    margin-top: 52px;
     padding-top: 134px;
 
     &::before {
@@ -107,10 +108,6 @@
   text-align: center;
   margin-bottom: 33px;
 
-  & button {
-    background-color: white;
-  }
-
   @media (min-width: @tablet-width) {
     margin-bottom: 15px;
   }
@@ -118,6 +115,10 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.reviews__toggles button {
+  background-color: white;
 }
 
 .reviews__togglers-btn {
@@ -137,24 +138,20 @@
 
 .reviews__toggler {
   .indent-reset();
-
   background-color: white;
-
   outline: none;
   border: none;
-
   height: 100%;
+}
 
-  & svg {
-    fill: rgba(40, 54, 69, 0.3);
-  }
+.reviews__toggler svg {
+  fill: rgba(40, 54, 69, 0.3);
+}
 
-  &:hover svg,
-  &:focus svg {
-    fill: rgba(40, 54, 69, 0.6);
-  }
+.reviews__toggler:hover svg {
+  fill: rgba(40, 54, 69, 0.6);
+}
 
-  &:active svg {
-    fill: rgba(40, 54, 69, 0.1);
-  }
+.reviews__toggler:active svg {
+  fill: rgba(40, 54, 69, 0.1);
 }
